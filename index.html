@@ -11,60 +11,88 @@
         p, ul { font-size: 15px; color: #444; }
         ul { padding-left: 20px; }
         .date { font-size: 13px; color: #888; margin-bottom: 24px; }
+        a { color: #2563EB; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact { background: #f3f4f6; padding: 16px; border-radius: 8px; margin-top: 24px; }
+        .contact a { font-weight: 600; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: February 2, 2025</p>
+    <p class="date">Last updated: February 12, 2026</p>
 
     <h2>Introduction</h2>
     <p>Choradora ("we", "our", or "the app") is a family chore management app. We take your privacy seriously. This policy explains what data we collect, how we use it, and your rights.</p>
 
     <h2>Data We Collect</h2>
     <ul>
-        <li><strong>Account information:</strong> name, email address, and role (parent or kid) that you provide during signup.</li>
-        <li><strong>Chore data:</strong> chores, rewards, points, streaks, and achievements you create within the app.</li>
-        <li><strong>Photos:</strong> images you optionally attach as chore completion proof. These are stored in your private iCloud container.</li>
-        <li><strong>Device identifiers:</strong> used solely for push notifications and syncing across your devices.</li>
+        <li><strong>Account information:</strong> name, email address, and role (parent or kid) that you provide during signup via Sign in with Apple.</li>
+        <li><strong>Chore data:</strong> chores, rewards, points, streaks, achievements, daily plans, and family events you create within the app.</li>
+        <li><strong>Photos:</strong> images you optionally attach as chore completion proof. These are stored in Apple's CloudKit alongside your family data.</li>
+        <li><strong>Profile photos:</strong> optional profile images you upload for your account.</li>
+        <li><strong>User identifiers:</strong> Apple ID credentials, iCloud record IDs, and internal account identifiers used for authentication and syncing.</li>
+        <li><strong>Device identifiers:</strong> device name (used solely to suggest a display name during setup) and push notification tokens.</li>
     </ul>
 
     <h2>How We Use Your Data</h2>
     <ul>
-        <li>To provide the app's core functionality: managing chores, rewards, and family accounts.</li>
-        <li>To sync your data across your devices via iCloud.</li>
-        <li>To send push notifications about chore reminders and updates.</li>
-        <li>We do not sell, share, or transfer your personal data to third parties.</li>
+        <li>To provide the app's core functionality: managing chores, rewards, family accounts, daily plans, and family calendars.</li>
+        <li>To sync your data across your devices and between family members via Apple's CloudKit.</li>
+        <li>To send push notifications about chore reminders, approval requests, streak milestones, and weekly summaries.</li>
+        <li>We do <strong>not</strong> sell, share, or transfer your personal data to third parties.</li>
+        <li>We do <strong>not</strong> use any third-party analytics, advertising, or tracking services.</li>
     </ul>
 
     <h2>Data Storage &amp; Security</h2>
     <ul>
-        <li>All your data is stored in Apple's iCloud (CloudKit) under your personal Apple ID. We do not operate our own servers.</li>
-        <li>Sensitive credentials are stored in the iOS Keychain.</li>
-        <li>We do not have access to your iCloud data.</li>
+        <li>Your data is stored in Apple's CloudKit, a secure cloud service managed by Apple. We do not operate our own servers.</li>
+        <li>Family data (chores, rewards, accounts) is stored in a shared CloudKit public database so family members can sync with each other.</li>
+        <li>Sensitive credentials such as passwords are hashed using SHA-256 and stored locally in the iOS Keychain. They are never transmitted in plaintext.</li>
+        <li>Profile images and chore proof photos are stored as CloudKit Assets.</li>
+        <li>Local caching uses UserDefaults for app preferences and quick offline access.</li>
     </ul>
 
     <h2>Children's Privacy</h2>
     <ul>
-        <li>Kid accounts are created and managed by a parent within the app.</li>
-        <li>Kids do not provide an email address or any personal information beyond a display name chosen by their parent.</li>
+        <li>Kid accounts are created and managed by a parent or legal guardian within the app.</li>
+        <li>Parents must provide explicit consent before creating a kid account. This consent is recorded and stored with a timestamp.</li>
+        <li>Kids do not provide an email address or any personal information beyond a display name and age chosen by their parent.</li>
+        <li>Kid accounts are accessed via a parent-generated login code and password — no personal Apple ID is required for kids.</li>
+        <li>Parents can view, edit, and delete their child's account and all associated data at any time via Settings.</li>
         <li>We comply with COPPA (Children's Online Privacy Protection Act) requirements.</li>
     </ul>
 
     <h2>Subscriptions</h2>
     <ul>
-        <li>Choradora offers an auto-renewable monthly subscription.</li>
+        <li>Choradora offers an auto-renewable monthly subscription for premium features.</li>
         <li>Payment is processed entirely by Apple through your Apple ID. We do not collect or store any payment information.</li>
-        <li>You can manage or cancel your subscription in your device's Settings → Apple ID → Subscriptions.</li>
+        <li>You can manage or cancel your subscription in your device's Settings &rarr; Apple ID &rarr; Subscriptions.</li>
     </ul>
 
     <h2>Third-Party Services</h2>
-    <p>We use Apple's CloudKit, StoreKit, and Push Notification services. These are governed by Apple's own privacy policy. We do not use any third-party analytics, advertising, or tracking services.</p>
+    <p>We use the following Apple services, each governed by <a href="https://www.apple.com/privacy/">Apple's Privacy Policy</a>:</p>
+    <ul>
+        <li><strong>CloudKit</strong> — cloud data storage and sync</li>
+        <li><strong>StoreKit</strong> — in-app subscription management</li>
+        <li><strong>Push Notifications (APNs)</strong> — chore reminders and family updates</li>
+        <li><strong>Sign in with Apple</strong> — parent account authentication</li>
+        <li><strong>WidgetKit</strong> — home screen widget data</li>
+    </ul>
+    <p>We do not use any third-party analytics, advertising, or tracking services.</p>
 
     <h2>Your Rights</h2>
     <ul>
-        <li>You can delete your account and all associated data from within the app at any time.</li>
-        <li>Since all data is stored in your private iCloud container, deleting the app and your iCloud data removes everything.</li>
+        <li>You can delete your account and all associated data from within the app at any time via Settings &rarr; Delete Account.</li>
+        <li>Account deletion permanently removes your profile, chores, rewards, and transaction history from CloudKit.</li>
+        <li>If you are a parent, deleting your account also removes all linked kid accounts and family data.</li>
+        <li>You may contact us at <a href="mailto:choradoraoffical@outlook.com">choradoraoffical@outlook.com</a> for any privacy-related requests.</li>
     </ul>
+
+    <div class="contact">
+        <h2 style="margin-top: 0;">Contact Us</h2>
+        <p>If you have any questions about this privacy policy or your data, please contact us at:<br>
+        <a href="mailto:choradoraoffical@outlook.com">choradoraoffical@outlook.com</a></p>
+    </div>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this privacy policy from time to time. Any changes will be reflected on this page and within the app.</p>
