@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choradora — Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 700px; margin: 0 auto; padding: 24px; color: #1a1a1a; line-height: 1.6; }
-        h1 { font-size: 28px; margin-bottom: 4px; }
-        h2 { font-size: 18px; margin-top: 28px; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 700px; margin: 0 auto; padding: 24px; color: #1a1a1a; line-height: 1.7; }
+        h1 { font-size: 28px; margin-bottom: 4px; letter-spacing: -0.5px; }
+        h2 { font-size: 18px; margin-top: 32px; letter-spacing: -0.3px; }
         p, ul { font-size: 15px; color: #444; }
         ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
         .date { font-size: 13px; color: #888; margin-bottom: 24px; }
         a { color: #2563EB; text-decoration: none; }
         a:hover { text-decoration: underline; }
@@ -19,72 +23,114 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: February 12, 2026</p>
+    <p class="date">Last updated: March 16, 2026</p>
 
     <h2>Introduction</h2>
-    <p>Choradora ("we", "our", or "the app") is a family chore management app. We take your privacy seriously. This policy explains what data we collect, how we use it, and your rights.</p>
+    <p>Choradora ("we", "our", or "the app") is a family chore management app that helps families organize chores, track rewards, and build positive habits. We take your privacy seriously. This policy explains what data we collect, how we use it, and your rights.</p>
 
     <h2>Data We Collect</h2>
+    <p><strong>Account Information</strong></p>
     <ul>
-        <li><strong>Account information:</strong> name, email address, and role (parent or kid) that you provide during signup via Sign in with Apple.</li>
-        <li><strong>Chore data:</strong> chores, rewards, points, streaks, achievements, daily plans, and family events you create within the app.</li>
-        <li><strong>Photos:</strong> images you optionally attach as chore completion proof. These are stored in Apple's CloudKit alongside your family data.</li>
-        <li><strong>Profile photos:</strong> optional profile images you upload for your account.</li>
-        <li><strong>User identifiers:</strong> Apple ID credentials, iCloud record IDs, and internal account identifiers used for authentication and syncing.</li>
-        <li><strong>Device identifiers:</strong> device name (used solely to suggest a display name during setup) and push notification tokens.</li>
+        <li><strong>Parent accounts:</strong> Apple ID credentials (via Sign in with Apple), iCloud record ID, display name, email address (if provided by Apple), and avatar emoji or profile image.</li>
+        <li><strong>Kid accounts:</strong> display name, age (set by parent), avatar emoji or profile image, and a parent-generated login code. Kids do not provide an email address or Apple ID.</li>
+        <li><strong>Family data:</strong> family ID and family join code used to link parent and kid accounts.</li>
+    </ul>
+    <p><strong>App Content</strong></p>
+    <ul>
+        <li><strong>Chores:</strong> chore names, descriptions, difficulty, point values, schedules, assigned family member, and completion status.</li>
+        <li><strong>Photos:</strong> images you optionally capture or select as chore completion proof, stored locally on device and synced via Apple CloudKit.</li>
+        <li><strong>Rewards:</strong> reward names, point costs, categories, redemption history, and approval status.</li>
+        <li><strong>Points &amp; streaks:</strong> points earned and spent, streak history, achievement progress, and daily completion records.</li>
+        <li><strong>Daily plans &amp; events:</strong> routine schedule blocks and family calendar events.</li>
+    </ul>
+    <p><strong>Subscription &amp; Purchase Data</strong></p>
+    <ul>
+        <li><strong>RevenueCat identifiers:</strong> an anonymous app user ID used to manage your subscription status. We do not receive or store your payment card details.</li>
+        <li><strong>Subscription status:</strong> whether you have an active subscription, trial status, and renewal dates, provided by RevenueCat.</li>
+        <li><strong>Affiliate referral code:</strong> if you entered a creator promo code, we store the code and the date it was applied to attribute the referral.</li>
+    </ul>
+    <p><strong>Device &amp; Technical Data</strong></p>
+    <ul>
+        <li><strong>Push notification tokens:</strong> used to deliver chore reminders, approval requests, streak milestones, and weekly summaries.</li>
+        <li><strong>App version:</strong> stored to ensure compatibility and sent with subscription data.</li>
+        <li><strong>Country code:</strong> provided by the App Store at time of purchase for subscription revenue reporting. We do not collect precise location data.</li>
     </ul>
 
     <h2>How We Use Your Data</h2>
     <ul>
-        <li>To provide the app's core functionality: managing chores, rewards, family accounts, daily plans, and family calendars.</li>
-        <li>To sync your data across your devices and between family members via Apple's CloudKit.</li>
-        <li>To send push notifications about chore reminders, approval requests, streak milestones, and weekly summaries.</li>
-        <li>We do <strong>not</strong> sell, share, or transfer your personal data to third parties.</li>
-        <li>We do <strong>not</strong> use any third-party analytics, advertising, or tracking services.</li>
+        <li>To provide the app's core features: managing chores, rewards, points, streaks, daily plans, achievements, and family accounts.</li>
+        <li>To sync your family data across devices via Apple CloudKit.</li>
+        <li>To manage your subscription through RevenueCat and Apple StoreKit.</li>
+        <li>To send push notifications about chore reminders, approval requests, streak milestones, achievement unlocks, and weekly summaries.</li>
+        <li>To attribute affiliate referrals and process creator commissions when applicable.</li>
+        <li>To display chore and streak data on your home screen widget.</li>
+        <li>We do <strong>not</strong> sell, rent, or share your personal data with third parties for advertising or marketing purposes.</li>
+        <li>We do <strong>not</strong> use any third-party analytics, advertising, or behavioral tracking services.</li>
     </ul>
 
     <h2>Data Storage &amp; Security</h2>
     <ul>
-        <li>Your data is stored in Apple's CloudKit, a secure cloud service managed by Apple. We do not operate our own servers.</li>
-        <li>Family data (chores, rewards, accounts) is stored in a shared CloudKit public database so family members can sync with each other.</li>
-        <li>Sensitive credentials such as passwords are hashed using SHA-256 and stored locally in the iOS Keychain. They are never transmitted in plaintext.</li>
-        <li>Profile images and chore proof photos are stored as CloudKit Assets.</li>
-        <li>Local caching uses UserDefaults for app preferences and quick offline access.</li>
+        <li><strong>Apple CloudKit:</strong> family data (chores, rewards, accounts, plans, events, and photos) is synced and stored in Apple's CloudKit infrastructure, governed by <a href="https://www.apple.com/privacy/">Apple's Privacy Policy</a>.</li>
+        <li><strong>Google Firebase (Firestore):</strong> subscription-related data, affiliate referral records, and revenue event logs are stored in Google Cloud Firestore. This data is used to manage subscriptions and process affiliate commissions.</li>
+        <li><strong>On-device storage:</strong> app preferences, cached data, and offline content are stored locally using UserDefaults. Sensitive session data (user credentials and authentication tokens) is stored in the iOS Keychain, encrypted and excluded from iCloud backups.</li>
+        <li><strong>Password security:</strong> kid account passwords are hashed using SHA-256 before storage. They are never transmitted or stored in plaintext.</li>
+        <li><strong>Photos:</strong> chore proof photos and profile images are stored locally on your device and synced as CloudKit Assets.</li>
+        <li><strong>Widget data:</strong> a limited subset of chore and streak data is shared with the home screen widget via a secure App Group container.</li>
     </ul>
 
     <h2>Children's Privacy</h2>
     <ul>
-        <li>Kid accounts are created and managed by a parent or legal guardian within the app.</li>
-        <li>Parents must provide explicit consent before creating a kid account. This consent is recorded and stored with a timestamp.</li>
-        <li>Kids do not provide an email address or any personal information beyond a display name and age chosen by their parent.</li>
-        <li>Kid accounts are accessed via a parent-generated login code and password — no personal Apple ID is required for kids.</li>
-        <li>Parents can view, edit, and delete their child's account and all associated data at any time via Settings.</li>
+        <li>Kid accounts are created and managed exclusively by a parent or legal guardian within the app.</li>
+        <li>Parents must provide explicit consent before creating a kid account. This consent is recorded with a timestamp (parental consent date).</li>
+        <li>Kids provide only a display name and optional age, both chosen by their parent. No email address, Apple ID, or other personal identifiers are collected from children.</li>
+        <li>Kid accounts are accessed via a parent-generated login code and password. No external authentication is required.</li>
+        <li>Parents can view, edit, and delete their child's account and all associated data at any time.</li>
         <li>We comply with COPPA (Children's Online Privacy Protection Act) requirements.</li>
     </ul>
 
     <h2>Subscriptions</h2>
     <ul>
-        <li>Choradora offers an auto-renewable monthly subscription for premium features.</li>
-        <li>Payment is processed entirely by Apple through your Apple ID. We do not collect or store any payment information.</li>
+        <li>Choradora offers an auto-renewable monthly subscription ("Choradora Pro") for premium features.</li>
+        <li>Payment is processed by Apple through your Apple ID. We do not collect, process, or store any payment card information.</li>
+        <li>Subscription status is managed through RevenueCat, which receives an anonymous app user ID and subscription receipts from Apple. RevenueCat does not receive your name, email, or other personal details.</li>
         <li>You can manage or cancel your subscription in your device's Settings &rarr; Apple ID &rarr; Subscriptions.</li>
     </ul>
 
-    <h2>Third-Party Services</h2>
-    <p>We use the following Apple services, each governed by <a href="https://www.apple.com/privacy/">Apple's Privacy Policy</a>:</p>
+    <h2>Affiliate Program</h2>
     <ul>
-        <li><strong>CloudKit</strong> — cloud data storage and sync</li>
-        <li><strong>StoreKit</strong> — in-app subscription management</li>
-        <li><strong>Push Notifications (APNs)</strong> — chore reminders and family updates</li>
-        <li><strong>Sign in with Apple</strong> — parent account authentication</li>
-        <li><strong>WidgetKit</strong> — home screen widget data</li>
+        <li>Choradora operates a creator affiliate program. If you enter a creator's promo code, we store the code and the date it was applied to attribute the referral.</li>
+        <li>Affiliate creators who sign up for the program provide their name, email address, and location (country and state/region). This data is stored in Firebase Firestore and used to manage their affiliate account and process commission payouts.</li>
+        <li>Commission payouts to affiliates are processed via Stripe. Stripe receives the affiliate's payout details as necessary to complete the transaction, governed by <a href="https://stripe.com/privacy">Stripe's Privacy Policy</a>.</li>
+        <li>We perform fraud detection to prevent self-referrals and other prohibited activity as described in our Affiliate Agreement.</li>
     </ul>
-    <p>We do not use any third-party analytics, advertising, or tracking services.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>We use the following services to operate Choradora:</p>
+    <ul>
+        <li><strong>Apple CloudKit</strong> — cloud data storage and family sync (<a href="https://www.apple.com/privacy/">Apple Privacy Policy</a>)</li>
+        <li><strong>Apple StoreKit</strong> — in-app subscription purchases</li>
+        <li><strong>Apple Push Notifications (APNs)</strong> — chore reminders and family updates</li>
+        <li><strong>Sign in with Apple</strong> — parent account authentication</li>
+        <li><strong>Apple WidgetKit</strong> — home screen widget</li>
+        <li><strong>RevenueCat</strong> — subscription management and receipt validation (<a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>)</li>
+        <li><strong>Google Firebase</strong> — Firestore database and Cloud Functions for subscription and affiliate processing (<a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a>)</li>
+        <li><strong>Stripe</strong> — affiliate commission payouts (<a href="https://stripe.com/privacy">Stripe Privacy Policy</a>)</li>
+    </ul>
+    <p>We do not use any third-party analytics, advertising, or behavioral tracking services.</p>
+
+    <h2>Data Retention</h2>
+    <ul>
+        <li>Your family data (chores, rewards, points, achievements) is retained as long as your account is active.</li>
+        <li>Subscription and revenue records are retained as required for financial reporting and audit purposes.</li>
+        <li>Affiliate commission records are retained for tax and compliance purposes even after an affiliate account is closed.</li>
+        <li>When you delete your account, your profile, family data, and associated content are permanently removed from CloudKit. Anonymized subscription records may be retained in Firebase for financial reporting.</li>
+    </ul>
 
     <h2>Your Rights</h2>
     <ul>
-        <li>You can delete your account and all associated data from within the app at any time via Settings &rarr; Delete Account.</li>
-        <li>Account deletion permanently removes your profile, chores, rewards, and transaction history from CloudKit.</li>
+        <li>You can delete your account and all associated data from within the app at any time via Settings.</li>
         <li>If you are a parent, deleting your account also removes all linked kid accounts and family data.</li>
+        <li>You may request a copy of your data or ask questions about how your data is used by contacting us.</li>
         <li>You may contact us at <a href="mailto:choradoraoffical@outlook.com">choradoraoffical@outlook.com</a> for any privacy-related requests.</li>
     </ul>
 
@@ -95,6 +141,6 @@
     </div>
 
     <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Any changes will be reflected on this page and within the app.</p>
+    <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date. We encourage you to review this policy periodically.</p>
 </body>
 </html>
